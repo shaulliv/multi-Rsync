@@ -89,7 +89,9 @@ We can check if it is running by seeing the log file that we defined in rsyncd.c
 
 If we launched rsync in this manner, we can stop it by killing its process. We can obtaining the process ID by reading the contents of the file /var/run/rsyncd.pid and then invoke kill with this process ID. We can pass it directly to kill using:
 
-`sudo kill `cat /var/run/rsyncd.pid``
+```
+sudo kill `cat /var/run/rsyncd.pid`
+```
 
 **Configuring firewall**
 
