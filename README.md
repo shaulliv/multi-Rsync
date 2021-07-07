@@ -1,4 +1,4 @@
-# multirsync
+# multi-Rsync
 Rsync folders between multiple servers
 
 **Installing RSYNC**
