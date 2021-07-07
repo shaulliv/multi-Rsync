@@ -83,13 +83,13 @@ Finally, change the permission of this file so it can't be read or modified by o
 
 Once everything is set, one of the ways to use rsync as a daemon is launching it with the --daemon parameter, if you followed the previous instructions you can simply use this command:
 
-sudo rsync --daemon
+`sudo rsync --daemon`
 
 We can check if it is running by seeing the log file that we defined in rsyncd.conf, in our example this is located in /var/log/rsyncd.log. Additionally, if the daemon is running, the file /var/run/rsyncd.pid will contain the process ID of rsync.
 
 If we launched rsync in this manner, we can stop it by killing its process. We can obtaining the process ID by reading the contents of the file /var/run/rsyncd.pid and then invoke kill with this process ID. We can pass it directly to kill using:
 
-sudo kill `cat /var/run/rsyncd.pid`
+`sudo kill `cat /var/run/rsyncd.pid``
 
 **Configuring firewall**
 
